@@ -1,5 +1,5 @@
 const TelegramBot = require("node-telegram-bot-api");
-const { getUsername } = require("./src/commons/helper.js");
+const { getUsername, getChatId } = require("./src/commons/helper.js");
 const init = require("./src/commons/init.js");
 const { ALLOWED_USERNAMES, TOKENS } = require("./src/commons/constants.js");
 const initMessages = require("./src/messages/index.js");
