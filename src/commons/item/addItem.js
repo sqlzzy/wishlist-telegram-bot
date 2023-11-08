@@ -31,7 +31,7 @@ async function addItem(bot, chatId, username, type, text, pathToFile) {
       } else if (user.username === username && items.includes(text)) {
         bot.sendMessage(
           chatId,
-          `${LIST_TYPES[type].item} *${text}* уже есть в ${LIST_TYPES[type].items}`,
+          `_${text}_ уже есть в ${LIST_TYPES[type].items}`,
           {
             parse_mode: "Markdown",
             disable_web_page_preview: true,

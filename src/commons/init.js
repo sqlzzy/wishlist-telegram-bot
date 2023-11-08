@@ -9,7 +9,7 @@ function init(bot, msg) {
   const userData = [{ username: getUsername(msg), wishes: [] }];
 
   const pathToFolder = "./src/json";
-  const nameFile = "users.json";
+  const nameFile = "user.json";
   const pathToFile = `${pathToFolder}/${nameFile}`;
 
   if (!fs.existsSync(pathToFolder) && !fs.existsSync(pathToFile)) {
